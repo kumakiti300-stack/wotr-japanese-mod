@@ -1,0 +1,2 @@
+# Preserve the exact distributed bytes used by SHA-256 verification.
+* -text

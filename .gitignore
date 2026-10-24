@@ -1,0 +1,10 @@
+# Translation payloads and packaged archives are kept out of Git history.
+translations/
+segments/
+**/zhCN*.json
+**/enGB*.json
+*.jsonl
+*.zip
+*.7z
+*.tar
+*.xz

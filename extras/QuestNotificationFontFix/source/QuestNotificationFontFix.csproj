@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>QuestNotificationFontFix</AssemblyName>
+    <RootNamespace>QuestNotificationFontFix</RootNamespace>
+    <Version>1.2.1</Version>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <FileVersion>1.2.1.0</FileVersion>
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Managed>$(GameDir)\Wrath_Data\Managed</Managed>
+  </PropertyGroup>
+  <Target Name="RequireGameDir" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(GameDir)' == ''" Text="Specify the installed game directory with -p:GameDir=..." />
+  </Target>
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(Managed)\UnityModManager\0Harmony.dll" Private="false" />
+    <Reference Include="UnityModManager" HintPath="$(Managed)\UnityModManager\UnityModManager.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(Managed)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(Managed)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(Managed)\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(Managed)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(Managed)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(Managed)\UnityEngine.TextRenderingModule.dll" Private="false" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+{
+  "Id": "QuestNotificationFontFix",
+  "DisplayName": "Quest Notification Japanese Font Fix",
+  "Author": "kumakiti300-stack",
+  "Version": "1.2.1",
+  "AssemblyName": "QuestNotificationFontFix.dll",
+  "EntryMethod": "QuestNotificationFontFix.Main.Load",
+  "Requirements": ["I18NFont4UnityGame"],
+  "LoadAfter": ["I18NFont4UnityGame"]
+}
